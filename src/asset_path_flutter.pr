@@ -1,3 +1,36 @@
+{*
+ * Flutter WebP Asset Path Generator Blueprint
+ * 
+ * This Pulsar template defines how asset file paths are generated when exporting
+ * WebP assets for Flutter projects from Supernova.
+ * 
+ * EXECUTION CONTEXT:
+ * ------------------
+ * This blueprint is executed by the Supernova exporter engine for each asset.
+ * It runs automatically when you execute the exporter through:
+ * - Supernova web UI (workspace > exporters > run)
+ * - Supernova CLI: `supernova run-exporter io.supernova.flutter-webp-assets`
+ * 
+ * HOW IT WORKS:
+ * -------------
+ * For each asset in your design system:
+ * 1. Extract the file format (webp)
+ * 2. Generate lowercase snake_case filename from original name
+ * 3. Handle duplicate names by appending _1, _2, etc.
+ * 4. Build folder path from asset group hierarchy
+ * 5. Combine path and filename
+ * 
+ * EXAMPLE OUTPUT:
+ * ---------------
+ * Input:  Icons > Top Menu > Burger (Figma group structure)
+ * Output: icons/top_menu/burger.webp
+ * 
+ * CUSTOMIZATION:
+ * --------------
+ * Modify the template below to change naming conventions, folder structure,
+ * or add custom transformations to match your Flutter project requirements.
+ *}
+
 {[ let extension = asset.format /]}
 {[ let folder = "" /]}
 

@@ -1,7 +1,7 @@
 {
-    "id": "io.supernova.flutter-svg-assets",
-    "name": "Flutter SVG Assets",
-    "description": "Flutter SVG Asset Exporter",
+    "id": "io.supernova.flutter-webp-assets",
+    "name": "Flutter WebP Assets",
+    "description": "Flutter WebP Asset Exporter",
     "author": "Jiri Trecak",
     "organization": "Supernova",
     "homepage": "https://supernova.io",
@@ -20,6 +20,6 @@
     "tags": [
         "Assets",
         "Flutter",
-        "SVG"
+        "WebP"
     ]
 }

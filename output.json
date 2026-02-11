@@ -3,7 +3,7 @@
     "assets": [{
         "write_using": "asset_path_flutter.pr",
         "scale": "1x",
-        "format": "svg",
+        "format": "webp",
         "type": "image"
     }]
 }
